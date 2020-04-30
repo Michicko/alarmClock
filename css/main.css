@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Avenir;
+    background: #000;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar, .modal-nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: sticky;
+    border-bottom: 1px solid #333;
+    background: #1F2020;
+    z-index: 1;
+}
+.navbar .bg-nav,
+.modal-nav .bg-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .sm-nav,
+.navbar .bg-nav,
+.modal-nav .sm-nav,
+.modal-nav .bg-nav
+ {
+padding: 10px 20px;
+text-align: center;
+}
+
+.modal-nav .bg-nav {
+    padding: 12px 20px;
+}
+/* End of Navbar */
+
+/* Toggle */
+.toggle input {
+    display: none;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    border: 2px solid #4E5851;
+    border-radius: 30px;
+    transition: all 0.4s;
+}
+
+/* sliding button */
+.slider:before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    left: 2px;
+    top: 2px;
+    background-color: #fff;
+    border-radius: 24px;
+    transition: all 0.4s;
+}
+
+/* on checked */
+input:checked+.slider {
+    background-color: #00FF66;
+    border: none;
+}
+
+input:checked+.slider::before {
+    transform: translateX(26px);
+}
+
+/* End of toggle */
+
+.container {
+    max-width: 550px;
+    padding: 0;
+    margin: 0 auto;
+}
+.content {
+    margin-bottom: 20px;
+}
+.title {
+    margin-left: -15px;
+}
+ul {
+    list-style-type: none;
+}
+
+.list-item {
+    display: inline-block;
+}
+
+/* Buttons */
+.done {
+    display: none;
+}
+
+.btn {
+    color: #FFA500;
+    font-weight: 500;   
+    cursor: pointer;
+}
+.add {
+    font-size: 1.4rem;
+}
+
+.save, .cancel, .edit, .done, .update {
+    font-size: 1.2rem;
+}
+
+.btn:active {
+    transform: scale(.92);
+}
+/* End of Buttons */
+
+.del{
+    display: flex;
+    align-items: center;
+    float: left;
+    margin-right: 10px;
+}
+
+.delete {
+    border: 1px solid none;
+    background: red;
+    border-radius: 100%;
+    padding: 4px;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.item {
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1F2020;
+    padding: 15px 20px;
+    border-bottom: 1px solid #333;
+    color: #8B8B7A;
+    font-size: 1.6rem;
+}
+.amPm {
+    font-size: .7rem;
+}
+.min {
+    font-size: 1rem;
+}
+
+.disp-id {
+    display: none;
+}
+
+/* control */
+.enter {
+    display: none;
+}
+.toggle-div{
+    /* display: none; */
+}
+.del{
+    display: none;
+}
+.modal {
+    display: none;
+}
+.update {
+    display: none;
+}
+/* end of control */
+
+footer {
+    text-align: center;
+    color: #8B8B7A;
+    padding: 15px 0;
+}
+
+.view-mode{
+    cursor: pointer;
+}
+
+.view-mode:hover {
+    background: #333;
+}

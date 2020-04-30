@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Modal css -->
+    <link rel="stylesheet" href="css/modal.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Alarm Clock</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="sm-nav">
+                <!-- time -->
+                <time id="time"></time>
+            </div>
+            <div class="bg-nav">
+                <!-- functions -->
+                <div class="ed-dn">
+                    <p class="edit btn">Edit</p>
+                    <p class="done btn">Done</p>
+                </div>
+                <p class="title">Alarm</p>
+                <div class="ad">
+                    <p class="add btn">+</p>
+                </div>
+            </div>
+        </nav>
+
+        <!-- contents -->
+        <div class="content">
+            <ul class="alarm-collections">
+                <!-- alarm items -->
+            </ul>
+        </div>
+        <footer>
+            created by Michicko | &copy 2020
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal">
+        <div class="container">
+            <div class="modal-content">
+                <!-- modal nav -->
+                <div class="modal-nav">
+                    <div class="sm-nav">
+                        <!-- time -->
+                        <time id="modal-time">3<span>:</span>02<span>:</span>20<span class="amPm">pm</span></time>
+                    </div>
+                    <div class="bg-nav">
+                        <!-- functions -->
+                        <div class="cal">
+                            <p class="cancel btn">Cancel</p>
+                        </div>
+                        <p class="title">Alarm</p>
+                        <div class="ad">
+                            <p class="save btn">Save</p>
+                            <p class="update btn">Update</p>
+                            <p id="id-nav"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- input -->
+                <div class="modal--time-input">
+                    <input type="time" id="time-input">
+                    <p class="info">Select an alarm time and save</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- UI js -->
+    <script src="js/ui.js"></script>
+    <!-- storage js -->
+    <script src="js/storage.js"></script>
+    <!-- app js -->
+    <script src="js/app.js"></script>
+</body>
+</html>
